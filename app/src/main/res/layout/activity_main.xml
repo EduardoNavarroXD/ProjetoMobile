@@ -11,88 +11,129 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:text="@string/tituloApp"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="51dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/labelCodigo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="91dp" />
+        app:layout_constraintBottom_toTopOf="@+id/codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/codigo"
         android:layout_width="342dp"
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="text"
         android:text="Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="130dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="54dp"
-        android:layout_height="15dp"
-        android:text="@string/labelAssunto"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="197dp" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="344dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="229dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/labelData"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="287dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="345dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="316dp" />
+        app:layout_constraintBottom_toTopOf="@+id/assunto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/labelDescricao"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="396dp" />
+        app:layout_constraintBottom_toTopOf="@+id/descricao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/labelCodigo"
+        app:layout_constraintBottom_toTopOf="@+id/codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/descricao"
         android:layout_width="343dp"
         android:layout_height="154dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="415dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/descricao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelData"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assunto"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <EditText
+        android:id="@+id/assunto"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="54dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/labelAssunto"
+        app:layout_constraintBottom_toTopOf="@+id/assunto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button"
-        android:backgroundTint="@color/botaoCancelarAluno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/botaoCancelarAluno"
         android:text="@string/botaoInserir"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="601dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 </androidx.constraintlayout.widget.ConstraintLayout>
